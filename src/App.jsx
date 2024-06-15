@@ -1,6 +1,7 @@
 import React from "react"
 import { Article } from "./components/Article/Article"
 import { Navbar } from "./components/Navbar/Navbar"
+import { Counter } from "./components/Counter/Counter"
 
 import "./styles/App.css"
 
@@ -18,7 +19,10 @@ class App extends React.Component {
       <>
         <Navbar />
         
-        <section id="articles">
+        <Counter />
+
+        
+        {/* <section id="articles">
           <Article title="Designing Dashboards"
            provider="NASA" 
            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum sequi, voluptatibus at dolorem ea esse nihil libero odit saepe delectus voluptas tenetur consectetur rem incidunt cum reprehenderit architecto. Quasi."
@@ -38,7 +42,7 @@ class App extends React.Component {
            provider="NASA" 
            description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum sequi, voluptatibus at dolorem ea esse nihil libero odit saepe delectus voluptas tenetur consectetur rem incidunt cum reprehenderit architecto. Quasi."
            thumbnail={article1Img}/>
-        </section>
+        </section> */}
       </>
     )
   }
